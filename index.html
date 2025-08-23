@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -7,8 +7,38 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  
+  <main>
+    <header>
+      <h1>Time Tracker</h1>
+      <p>Mide el tiempo que inviertes en cada proyecto</p>
+    </header>
+
+    <div class="seccionEntrada">
+      <input type="text" id="inputProyecto" placeholder="Nombre de Tu proyecto...">
+      <button id="btnAgregar">Agregar</button>
+    </div>
+
+    <div id="contenedorProyectos" class="contenedorProyectos">
+      <table>
+        <tr>
+          <td>check</td>
+          <td>nombre proyecto</td>
+          <td>tiempo</td>
+          <td>borrar</td>
+        </tr>
+      </table>
+      <div class=""></div>
+
+
+      <p>No hay proyectos aún. ¡Agrega el primero!</p>
+    </div>
+
+    <footer>
+      <p>Hecho con Amor para desarrolladores</p>
+    </footer>
+  </main>  
 
   <script src="./main.js"></script>
+  
 </body>
 </html>
