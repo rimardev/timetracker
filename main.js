@@ -1,37 +1,56 @@
-//variables
+//Variables
 const nuevoProyecto = document.getElementById('inputProyecto');
 const btnAgregar = document.getElementById('btnAgregar');
 let id = 0;
 
-//cargar local storage 
-let arrayPoyectos = JSON.parse(localStorage.getItem('proyectos')) || [];
-console.log(arrayPoyectos);
+//Carga array del local storage 
+let arrayProyectos = JSON.parse(localStorage.getItem('proyectos')) || [];
+console.log(arrayProyectos);
 
-//guardar local storage
+//Guarda array en local storage
 function guardarProyecto(proyecto) {
   localStorage.setItem('proyectos', JSON.stringify(proyecto));
-  console.log(arrayPoyectos);  
+  console.log(arrayProyectos);  
 };
 
 //renderizacion
 
-//agregar proyecto
-btnAgregar.addEventListener('click', () => {
-  console.log(nuevoProyecto.value);
-  let data = {
-    nombre: nuevoProyecto.value,
-    estado: false
+//Agregar proyecto al array
+function agregarProyecto(nombreProyecto) {
+  //Incrementa el id
+  if(arrayProyectos.length == 0){
+    id = 1;
+  } else {
+    id = arrayProyectos[0].id + 1;
   };
-  arrayPoyectos.unshift(data);
-  guardarProyecto(arrayPoyectos);
+
+  //Crea el nuevo objeto
+  let data = {
+    id: id,
+    estado: false,
+    nombre: nombreProyecto,
+    tiempo: "00:00"
+  };
+  arrayProyectos.unshift(data);
+  nuevoProyecto.value = '';
+  guardarProyecto(arrayProyectos);  
+};
+
+//Escucha boton agregar
+btnAgregar.addEventListener('click', () => {
+  if(nuevoProyecto.value == ''){
+    alert("Debes escribir un nombre de proyecto...");
+  } else {
+    agregarProyecto(nuevoProyecto.value);
+  };
 });
 
-//seleccion proyecto
+//Seleccion proyecto
 
-//accion botones play - stop
+//Borrar proyecto
 
-//guardar estados sesion actual
+//Accion botones play - stop
 
-//calcular tiempo trascurrido
+//Guardar estados sesion actual
 
-//borrar proyecto
+//Calcular tiempo trascurrido
