@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea 0%, #c24bb2 100%);
+  color: antiquewhite;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+main {
+  width: 100%;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.seccionEntrada {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;  
+}
+
+#inputProyecto {
+  width: 75%;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+#btnAgregar {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-color: royalblue;
+  color: antiquewhite;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#btnAgregar:hover {
+  background-color: rgb(42, 90, 233);
+}
+
+#contenedorProyectos {
+  width: 80%;
+  border: 1px solid antiquewhite;
+  border-radius: 10px;
+  padding: 10px;
+}
