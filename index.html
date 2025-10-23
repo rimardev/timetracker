@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TimeTracker</title>
-  <link rel="stylesheet" href="./style.css">
-  
+  <link rel="stylesheet" href="./style.css">  
 </head>
 <body>
   <main>
@@ -15,35 +14,16 @@
     </header>
 
     <div class="seccionEntrada">
-      <input type="text" id="inputProyecto" placeholder="Escribe nombre de Tu proyecto...">
+      <input type="text" id="inputProyecto" placeholder="Escribe el nombre de Tu proyecto...">
       <button id="btnAgregar">+ Agregar</button>
     </div>
 
     <div id="contenedorProyectos" class="contenedorProyectos">
 
-      <table>
-        <tr class="boxProyecto">
-          <td>
-            <input type="checkbox" name="" id="">
-          </td>
-          <td>nombre proyecto</td>
-          <td>
-            <label for="" class="display">00:00</label>
-          </td>
-          <td>
-            <button class="btn btnBorrar">X</button>
-          </td>
-          <td>
-            <button class="btn btnCorrer">></button>
-          </td>
-          <td>
-            <button class="btn btnParar">O</button>
-          </td>
-        </tr>
+      <table id="tabla">        
       </table>
-
       
-      <p>No hay proyectos aún. ¡Agrega el primero!</p>
+      <p id="invitacion"></p>
     </div>
 
     <footer>

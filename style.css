@@ -6,7 +6,7 @@
 }
 
 body {
-  background: linear-gradient(135deg, #667eea 0%, #c24bb2 100%);
+  background: linear-gradient(135deg, #162e9b 25%, #c24bb2 100%);
   color: antiquewhite;
   min-height: 100vh;
   padding: 20px;
@@ -33,7 +33,7 @@ header {
 }
 
 h1 {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 .seccionEntrada {
@@ -48,6 +48,7 @@ h1 {
   border: none;
   border-radius: 10px;
   outline: none;
+  text-align: center;
 }
 
 #btnAgregar {
@@ -66,8 +67,38 @@ h1 {
 }
 
 #contenedorProyectos {
-  width: 80%;
-  border: 1px solid antiquewhite;
+  width: 83%;
   border-radius: 10px;
   padding: 10px;
+}
+#tabla {
+  width: 100%;
+}
+
+#boxProyecto {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#display {
+  padding: 0 5px;
+  border-radius: 5px;
+  background-color: rgb(177, 196, 143);
+  color: black;
+}
+
+.btn {
+  width: 30px;
+  padding: 2px;
+  border: none;
+  border-radius: 5px;  
+}
+
+#invitacion {
+  text-align: center;
 }
